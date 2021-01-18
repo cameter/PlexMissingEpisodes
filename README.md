@@ -4,9 +4,11 @@ Scripts for finding missing episodes from your Plex library.
 
 Edit the variables at the top of the script with your TheTVDB authentication information and set the PlexServer as required...
 
-PowerShell version uses the new TheTVDB API and is way more updated than the Perl version. The PowerShell version does not require you to specify a section, as it will search all sections listed as "TV Shows" in Plex.
+There are 2 versions of the script. The output to file version will close after running, so in order to run this file it will require to be run via the output to file bat file. This will output the list of missing episodes to a "Missing Episodes.txt" file located in the same directory and open the txt file to view.
 
-For now, the Perl version requires you to specify the section ID which you can find via `http://localhost:32400/library/sections` (replace localhost with the plex server if not local)
+The second version will display the list allowing the txt to be viewed or coppied and will close when any keyboard key is pressed.
+
+The Reg file will edit the registry to allow the powershell files to be run by double clicking them rather than having to open in powershell or right click run with powershell.
 
 ## Powershell window closes when complete
 
