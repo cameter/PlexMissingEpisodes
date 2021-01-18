@@ -10,8 +10,4 @@ For now, the Perl version requires you to specify the section ID which you can f
 
 ## Powershell window closes when complete
 
-The simplest answer is to open a powershell window first, then run it.
-
-If you want to export it to a log you can pipe it to a log file with:
-
-c:\path_to_script\script.ps1 | Out-File c:\temp\output.txt
+Run "Plex Missing Episode Scan (Output To File).Bat" file as administrator and ensure a txt file named "Missing Episodes.txt" is created in the same folder as bat file. This will run the "Plex Missing Episode Scan (Output To File).ps1" (also in same folder) and output the list to the txt file before opening the txt file for viewing.
